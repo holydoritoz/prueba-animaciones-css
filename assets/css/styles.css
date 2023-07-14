@@ -222,6 +222,14 @@ main {
 .card img {
   width: 100%;
   object-fit: cover;
+  filter: grayscale(20%)brightness(0.7) contrast(1.2);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  transform: scale(1);
+}
+
+.card:hover img {
+  filter: grayscale(0%) blur(0px) brightness(1) contrast(1);
+  transform: scale(1);
 }
 
 .card p {
@@ -326,7 +334,6 @@ p {
     gap: 50px;
   }
 
-
   footer {
     display: flex;
     flex-direction: column;
@@ -343,16 +350,39 @@ p {
 
 @media screen and (min-width: 992px) {
   .grid-container {
-    grid-template-columns: auto 5%;
+    grid-template-columns: 10% auto 5%;
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
-      "header header "
-      "main ranking"
-      "footer footer"
+      "header main ranking "
+      "header main ranking"
+      "footer footer ranking"
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  figure a img {
+    width: 100px;
+  }
+
+  .nav-bar {
+    height: 700px;
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .profile a img {
+    width: 50px;
   }
 
   .user-ranking {
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .card-container {
@@ -363,8 +393,15 @@ p {
     width: 50%;
   }
 
+  .card-header .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .user-course {
     flex-direction: column;
     align-items: center;
   }
+
 }
