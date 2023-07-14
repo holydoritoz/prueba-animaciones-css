@@ -9,7 +9,7 @@
 
 ![image](https://github.com/holydoritoz/prueba-animaciones-css/assets/54608904/7a8c7bf6-8cbd-4153-8e2c-e1bba7581328)
 
-﻿# Versión Tablet (Min-witdh: 992px) ✔️ 
+﻿# Versión Desktop (Min-witdh: 992px) ✔️ 
 
 ![image](https://github.com/holydoritoz/prueba-animaciones-css/assets/54608904/5b19494a-de29-4a01-8ecb-a62e9d544bc2)
 
